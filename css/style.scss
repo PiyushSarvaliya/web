@@ -1,0 +1,120 @@
+*{
+    outline: none;
+}
+:root{
+    --color:rgb(100, 95, 180);
+    --bs-primary: #6C55F9;
+    --bs-primary-rgb: 108, 85, 249;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6C55F9;
+    --bs-btn-border-color: #6C55F9;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #4f3ad6;
+    --bs-btn-hover-border-color: #3927b3;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #3927b3;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6C55F9;
+    --bs-btn-disabled-border-color: #6C55F9
+}
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #B8B4D5;
+    --bs-btn-border-color: #B8B4D5;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #B8B4D5;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #B8B4D5;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d
+}
+
+body{
+    font-family: 'Work Sans';
+}
+.dropdown{
+    &:hover{
+        .dropdown-menu{
+            display: block;
+        }
+    }
+}
+.bg{
+    background-color: #cdcce84a;
+}
+.p-80{
+    padding: 80px 0px;
+}
+.common-title{  
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 5%;
+        height: 3px;
+        background-color: var(--bs-primary);
+        right: 0;
+        left: 0;
+        margin: 8px auto;
+        border-radius: 5px;
+    }
+}
+.bg-footer{
+    background: url(../img/world_pattern.svg) #2D2B3A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .icon{
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        transition: all 0.3s;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            transform: rotate(360deg);
+            background-color: var(--bs-primary) !important;
+            color: #fff !important;   
+        }
+        i{
+            line-height: 40px;
+        }
+    }
+    .company{
+       ul{
+        li{
+            transition: all 0.5s;
+            &:hover{
+                a{
+                    color: #fff;
+                }
+            }
+        }
+       }
+    }
+    .contact-us{
+        a{
+            transition: all 0.2s;
+            &:hover{
+                color: #fff !important;
+            }
+        }
+    }
+    // .email{
+    //     input{
+    //         width: 100%;
+    //     }
+    //     button{
+    //         width: 100%;
+    //     }
+    // }
+}
